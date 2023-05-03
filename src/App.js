@@ -14,6 +14,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      {/* Render our own Nav component which renders the links */}
         <Nav/>
         <Switch>
             <Route path="/" exact><Home /></Route>

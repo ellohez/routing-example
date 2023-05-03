@@ -1,16 +1,19 @@
 import { useState, createContext } from "react";
-import ContextUser from "./ContextUser";
+import ContextMidChild from "./ContextMidChild";
 
 export const TextContext = createContext();
 
 const ContextProvider = () => {
 
-    const [msg, setMsg] = useState("Hello");
+    // Not unpacking setMsg as it isn't used at this time
+    const [msg] = useState("Hello");
 
+    // This container creates and sets the context to pass 
+    // down to other children/grandchildren
     return (
         <TextContext.Provider value={msg}>
-            <h3>{`Message to pass: ${msg}!`}</h3>
-            <ContextUser />
+            <h3>Context provider - {`Message to pass: ${msg}!`}</h3>
+            <ContextMidChild />
         </TextContext.Provider>
     );
 };
