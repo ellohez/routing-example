@@ -1,7 +1,7 @@
 import { useState, createContext } from "react";
 import ContextUser from "./ContextUser";
 
-const TextContext = createContext();
+export const TextContext = createContext();
 
 const ContextProvider = () => {
 
@@ -9,7 +9,7 @@ const ContextProvider = () => {
 
     return (
         <TextContext.Provider value={msg}>
-            <h1>{`Message to pass: ${msg}!`}</h1>
+            <h3>{`Message to pass: ${msg}!`}</h3>
             <ContextUser />
         </TextContext.Provider>
     );

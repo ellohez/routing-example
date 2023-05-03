@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import TextContext from "./ContextProvider";
+import { TextContext } from "./ContextProvider";
 
 const ContextUser = () => {
 
@@ -7,8 +7,8 @@ const ContextUser = () => {
 
     return(
         <>
-            <h1>Context User component</h1>
-            <h2>{`Message is: ${msg}`}</h2>
+            <h3>Context User component</h3>
+            <h5>{`Message is: ${msg}`}</h5>
         </>
     );
 };
