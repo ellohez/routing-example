@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 import './App.css';
 import Contact from './Components/Contact';
@@ -8,7 +7,6 @@ import NotFound from './Components/NotFound';
 import Users from './Components/Users';
 
 import ContextProvider from './Components/ContextProvider';
-// import ContextUser from './Components/ContextUser';
 
 function App() {
   return (
