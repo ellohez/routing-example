@@ -18,4 +18,5 @@ const ContextProvider = () => {
     );
 };
 
+// Only one 'default' export in each module allowed
 export default ContextProvider;
